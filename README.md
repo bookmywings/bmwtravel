@@ -59,3 +59,67 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Folder Structure
+bookmywings/
+├── app/
+│   ├── Console/
+│   ├── Exceptions/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── Auth/
+│   │   │   ├── User/
+│   │   │   ├── Admin/
+│   │   │   ├── Booking/
+│   │   │   ├── Flight/
+│   │   │   ├── Hotel/
+│   │   │   ├── Package/
+│   │   │   └── Payment/
+│   │   ├── Middleware/
+│   │   └── Requests/
+│   ├── Models/
+│   │   ├── User.php
+│   │   ├── Booking.php
+│   │   ├── Flight.php
+│   │   ├── Hotel.php
+│   │   ├── Package.php
+│   │   └── Payment.php
+│   └── Services/
+│       ├── FlightAPIService.php
+│       ├── HotelAPIService.php
+│       └── PaymentGatewayService.php
+│
+├── database/
+│   ├── factories/
+│   ├── migrations/
+│   └── seeders/
+│
+├── routes/
+│   ├── web.php          # Public & Admin web routes
+│   ├── api.php          # API routes for frontend/mobile
+│   └── admin.php        # If you separate admin routes
+│
+├── resources/
+│   ├── views/
+│   │   ├── auth/
+│   │   ├── user/
+│   │   ├── admin/
+│   │   ├── bookings/
+│   │   ├── flights/
+│   │   ├── hotels/
+│   │   └── packages/
+│   └── css/js/partials/
+│
+├── public/
+│   └── assets/
+│       ├── css/
+│       ├── js/
+│       └── images/
+│
+├── config/
+├── tests/
+│   ├── Feature/
+│   └── Unit/
+└── .env
+
